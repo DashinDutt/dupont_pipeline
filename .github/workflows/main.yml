@@ -1,7 +1,9 @@
 name: Test Docker Login
 
 on:
-  workflow_dispatch:  # Allow manual triggering
+  push:
+    branches:
+      - main
 
 jobs:
   test-login:
